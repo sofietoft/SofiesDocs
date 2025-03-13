@@ -20,11 +20,7 @@ jobs:
         with:
           fail: false
           args: >
-            --exclude-path 10
-            --exclude-path 13
-            --exclude-path 14
-            --exclude-path 15
-                 
+            --exclude-path 10/*
 
       - name: Create Issue From File
         if: steps.lychee.outputs.exit_code != 0
