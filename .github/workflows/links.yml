@@ -19,6 +19,11 @@ jobs:
         uses: lycheeverse/lychee-action@v2.3.0
         with:
           fail: false
+          args: >
+            --exclude-path 10
+            --exclude-path 13
+            --exclude-path 14
+            --exclude-path 15
                  
 
       - name: Create Issue From File
