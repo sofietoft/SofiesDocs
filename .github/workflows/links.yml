@@ -16,7 +16,7 @@ jobs:
 
       - name: Link Checker
         id: lychee
-        uses: lycheeverse/lychee-action@40f334a825d2bbcb5d7bde863843250f1331e0cab30d22d6bda33e22aec2ca96 # for v2.3.0
+        uses: lycheeverse/lychee-action@v2.3.0
         with:
           fail: false
           args: --config ./lychee.toml .
