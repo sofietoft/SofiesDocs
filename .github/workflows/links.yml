@@ -19,8 +19,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2.3.0
         with:
           fail: false
-          args: | 
-            --exclude-path 10 --exclude-path 13
+          args: --exclude-path ./10 --config ./lychee.toml
 
       - name: Create Issue From File
         if: steps.lychee.outputs.exit_code != 0
