@@ -1,3 +1,4 @@
-# folders
-13/*.md
-10/*.md
+# images
+*.png
+*.jpg
+*.jpeg
