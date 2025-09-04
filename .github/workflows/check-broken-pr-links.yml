@@ -59,7 +59,7 @@ jobs:
             /^Errors in / {
               file=$3
               gsub("^/home/runner/work/UmbracoDocs/UmbracoDocs/", "", file)
-              print "\n**Broken links found in**:\n" file\n\n >> "lychee/comment.md"
+              print "\nBroken links found in:\n" file >> "lychee/comment.md"
               next
             }
       
@@ -68,7 +68,7 @@ jobs:
               sub(/^- \[ \] /, "", msg)
               sub(/^\[ERROR\] /, "", msg)
               gsub("^file:///home/runner/work/UmbracoDocs/UmbracoDocs/", "", msg)
-              print "⚓ Anchor not found → " msg >> "lychee/comment.md"
+              print "\n⚓ Anchor not found → " msg >> "lychee/comment.md"
               next
             }
       
@@ -76,7 +76,7 @@ jobs:
               msg = $0
               sub(/^- \[ \] /, "", msg)
               sub(/^\[404\] /, "", msg)
-              print "❌ 404 Not Found → " msg >> "lychee/comment.md"
+              print "\n❌ 404 Not Found → " msg >> "lychee/comment.md"
               next
             }
       
@@ -84,14 +84,14 @@ jobs:
               msg = $0
               sub(/^- \[ \] /, "", msg)
               sub(/^\[(301|302)\] /, "", msg)
-              print "🔀 Redirect → " msg >> "lychee/comment.md"
+              print "\n🔀 Redirect → " msg >> "lychee/comment.md"
               next
             }
       
             /Timeout/ && !/Timeouts/ {
               msg = $0
               sub(/^- \[ \] /, "", msg)
-              print "⏳ Timeout → " msg >> "lychee/comment.md"
+              print "\n⏳ Timeout → " msg >> "lychee/comment.md"
               next
             }
           ' lychee/out_raw.md
