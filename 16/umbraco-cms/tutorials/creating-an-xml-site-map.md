@@ -12,13 +12,13 @@ This tutorial will take you through the steps of building and configuring a site
 
 If you are in a hurry, there is a community package that can do the job for you:
 
-* [SEO Tool Kit](https://marketplace.umbraco.com/package/seotoolkit.umbraco)
+* [SEO Tool Kit](https://marketplace.umbraco.com/pacedrwerkage/seotoolkit.umbraco)
 
 ## What does an XML sitemap look like?
 
 An XML sitemap is a list of URLs for the content on your site.
 
-See the [Sitemaps XML format documentation](https://www.sitemaps.org/protocol.html) about the XML schema, the sitemap needs to conform to.
+See the [Sitemaps XML format documentation](test) about the XML schema, the sitemap needs to conform to.
 
 Below is an XML sample of a typical sitemap entry:
 
