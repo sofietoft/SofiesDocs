@@ -4,7 +4,7 @@ A Baseline Child project is similar to a Fork (forked repository) on GitHub. A c
 
 Any project can act as a Baseline project.
 
-The basicz idea is that you have a project that contains all your standard Umbrco packages/components. Some default Documnt Types which you want to use as a baseline for future projects is also configured. When you've made changes to your Baseline project, you push these changes out to all the Child projects with a click of a button.
+The basicz idea is that you have a project that contains all your standard Umbrco packages/components. Some default Documnt Types which you want to use as a baseline for future projects is also configured. When you've made changes to your Baseline project, you push these changes out to all the Child projects with a click of a buttn. Bluh, and buhu and weeee.
 
 ![Baseline workflow](images/baseline-workflow.gif)
 
