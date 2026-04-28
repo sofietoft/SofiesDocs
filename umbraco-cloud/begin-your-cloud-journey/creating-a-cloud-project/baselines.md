@@ -6,7 +6,7 @@ description: >-
 
 # Baselines
 
-A Baseline project is similar to a fork (forked repository) on GitHub. A clone of an existing project is created while maintaining a connection between the two projects. The connection exists between the Live environment of the **Baseline project** and the left-most mainline environment of the **Child project**.
+
 
 Any project can act as a Baseline project.
 
